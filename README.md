@@ -27,7 +27,7 @@ This project was created for educational purposes as part of our school's Busine
 
 **School:** Major General Griesbach School  
 **Class:** Business Complementary — Grade 7  
-**Year:** 2025
+**Year:** 2026
 
 ---
 
