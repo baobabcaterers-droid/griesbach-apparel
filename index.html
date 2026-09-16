@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIESBACH APPAREL | Business Comps 7</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            MGG APPAREL <span>GR 7</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#products">Collection</a></li>
+            <li><a href="#pitch">Business Plan</a></li>
+            <li><a href="#team">Founders</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="badge">Major General Griesbach School • Business Comps</div>
+        <h1>Fresh Fit. <span>Student Built.</span></h1>
+        <p>Premium streetwear designed by students, for students. High quality, comfortable, and made to stand out.</p>
+        <a href="#products"><button class="hero-btn">View The Drop</button></a>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <div class="section-header" id="products">
+        <h2>Launch Collection</h2>
+        <p>Pre-Order Now for School Delivery</p>
+    </div>
+
+    <div class="products">
+        <!-- Item 1 -->
+        <div class="product-card">
+            <img class="product-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600" alt="Hoodie">
+            <div class="product-details">
+                <div class="product-title">Signature Heavyweight Hoodie</div>
+                <div class="product-price">$45.00 CAD</div>
+                <button class="buy-btn" onclick="openOrder('Signature Heavyweight Hoodie', 45)">Pre-Order Item</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="product-card">
+            <img class="product-img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Tee">
+            <div class="product-details">
+                <div class="product-title">Oversized Boxy Tee</div>
+                <div class="product-price">$25.00 CAD</div>
+                <button class="buy-btn" onclick="openOrder('Oversized Boxy Tee', 25)">Pre-Order Item</button>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="product-card">
+            <img class="product-img" src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600" alt="Cap">
+            <div class="product-details">
+                <div class="product-title">Embroidered Dad Hat</div>
+                <div class="product-price">$20.00 CAD</div>
+                <button class="buy-btn" onclick="openOrder('Embroidered Dad Hat', 20)">Pre-Order Item</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BUSINESS PITCH SECTION -->
+    <section class="pitch" id="pitch">
+        <h2>Our Business Model</h2>
+        <p>
+            Created for our Grade 7 Business Complementary course at Major General Griesbach. 
+            Our goal is to provide high-quality everyday streetwear for middle school students at fair prices. 
+            Every item is locally designed with focus on durability, comfort, and aesthetic minimalism.
+        </p>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <div class="section-header" id="team">
+        <h2>Meet The Founders</h2>
+        <p>Grade 7 Business Team</p>
+    </div>
+
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-role">Head of Product & Web</div>
+            <div class="team-name">Your Name</div>
+        </div>
+        <div class="team-card">
+            <div class="team-role">Finance & Logistics</div>
+            <div class="team-name">Kerig</div>
+        </div>
+        <div class="team-card">
+            <div class="team-role">Marketing & Sales</div>
+            <div class="team-name">Brody</div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Major General Griesbach School • Business Comps Class Project 2025</p>
+    </footer>
+
+    <!-- POPUP MODAL -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content">
+            <h3 id="modalItemTitle">Pre-Order Item</h3>
+            <p id="modalItemPrice" class="modal-price"></p>
+            
+            <input type="text" id="custName" placeholder="Student Name / Homeroom">
+            <select id="custSize">
+                <option>Select Size (Youth L / Adult S)</option>
+                <option>Small (S)</option>
+                <option>Medium (M)</option>
+                <option>Large (L)</option>
+                <option>Extra Large (XL)</option>
+            </select>
+            
+            <button class="hero-btn full-btn" onclick="submitOrder()">Confirm Pre-Order</button>
+            <br>
+            <button class="modal-close" onclick="closeOrder()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
