@@ -1,134 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRIESBACH APPAREL | Business Comps 7</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Griesbach Apparel | Business Complementary</title>
+  <meta name="description" content="Griesbach Apparel — Grade 7 Business Complementary clothing brand website (Major General Griesbach School)." />
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">
-            MGG APPAREL <span>GR 7</span>
+  <!-- Announcement bar -->
+  <div class="announce">
+    <p><strong>School Project:</strong> Pre-orders are a demo for class • Launch Drop</p>
+    <a class="announce-link" href="#products">View Drop</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="brand-mark">GA</span>
+      <span class="brand-name">Griesbach Apparel</span>
+      <span class="brand-tag">GR 7</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#products">Collection</a></li>
+      <li><a href="#pitch">Business Plan</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#team">Founders</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-inner reveal">
+      <div class="pill">Major General Griesbach School • Business Complementary</div>
+      <h1>Fresh fit. <span>Student built.</span></h1>
+      <p class="hero-sub">
+        Griesbach Apparel is a clean, minimal streetwear concept made by Grade 7 students.
+        Built for comfort, style, and school pride.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#products">Shop the Drop</a>
+        <a class="btn btn-ghost" href="#pitch">See the Plan</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Launch items</div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#products">Collection</a></li>
-            <li><a href="#pitch">Business Plan</a></li>
-            <li><a href="#team">Founders</a></li>
-        </ul>
-    </nav>
+        <div class="stat">
+          <div class="stat-num">1</div>
+          <div class="stat-label">School community</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Student-made</div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="badge">Major General Griesbach School • Business Comps</div>
-        <h1>Fresh Fit. <span>Student Built.</span></h1>
-        <p>Premium streetwear designed by students, for students. High quality, comfortable, and made to stand out.</p>
-        <a href="#products"><button class="hero-btn">View The Drop</button></a>
-    </section>
-
-    <!-- PRODUCTS SECTION -->
-    <div class="section-header" id="products">
-        <h2>Launch Collection</h2>
-        <p>Pre-Order Now for School Delivery</p>
+  <!-- Products -->
+  <section class="section" id="products">
+    <div class="section-head reveal">
+      <h2>Launch Collection</h2>
+      <p>Pre-order demo (no payments)</p>
     </div>
 
-    <div class="products">
-        <!-- Item 1 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600" alt="Hoodie">
-            <div class="product-details">
-                <div class="product-title">Signature Heavyweight Hoodie</div>
-                <div class="product-price">$45.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Signature Heavyweight Hoodie', 45)">Pre-Order Item</button>
-            </div>
+    <div class="grid products">
+      <article class="card product reveal" data-name="Signature Heavyweight Hoodie" data-price="45">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1400" alt="Hoodie product photo">
+        <div class="card-body">
+          <div class="row">
+            <h3>Signature Heavyweight Hoodie</h3>
+            <span class="price">$45 CAD</span>
+          </div>
+          <p class="muted">Warm, durable, and designed to last.</p>
+          <button class="btn btn-primary order-btn">Pre-Order</button>
         </div>
+      </article>
 
-        <!-- Item 2 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Tee">
-            <div class="product-details">
-                <div class="product-title">Oversized Boxy Tee</div>
-                <div class="product-price">$25.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Oversized Boxy Tee', 25)">Pre-Order Item</button>
-            </div>
+      <article class="card product reveal" data-name="Oversized Boxy Tee" data-price="25">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=1400" alt="T-shirt product photo">
+        <div class="card-body">
+          <div class="row">
+            <h3>Oversized Boxy Tee</h3>
+            <span class="price">$25 CAD</span>
+          </div>
+          <p class="muted">Clean logo, everyday fit, simple style.</p>
+          <button class="btn btn-primary order-btn">Pre-Order</button>
         </div>
+      </article>
 
-        <!-- Item 3 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600" alt="Cap">
-            <div class="product-details">
-                <div class="product-title">Embroidered Dad Hat</div>
-                <div class="product-price">$20.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Embroidered Dad Hat', 20)">Pre-Order Item</button>
-            </div>
+      <article class="card product reveal" data-name="Embroidered Dad Hat" data-price="20">
+        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=1400" alt="Hat product photo">
+        <div class="card-body">
+          <div class="row">
+            <h3>Embroidered Dad Hat</h3>
+            <span class="price">$20 CAD</span>
+          </div>
+          <p class="muted">Comfortable, adjustable, low-key style.</p>
+          <button class="btn btn-primary order-btn">Pre-Order</button>
         </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Business Pitch -->
+  <section class="section" id="pitch">
+    <div class="panel reveal">
+      <h2>Business Plan (Simple)</h2>
+      <p>
+        This website is part of our Grade 7 Business Complementary project at Major General Griesbach School.
+        Our goal is to create a clothing brand concept with clean design, fair prices, and reliable quality.
+      </p>
+
+      <div class="bullets">
+        <div class="bullet">
+          <h4>Target Customer</h4>
+          <p class="muted">Students who want comfortable, stylish everyday clothing.</p>
+        </div>
+        <div class="bullet">
+          <h4>Value</h4>
+          <p class="muted">Simple designs, good materials, and a brand connected to our school.</p>
+        </div>
+        <div class="bullet">
+          <h4>How We Sell</h4>
+          <p class="muted">Pre-orders (demo) + school pickup/delivery plan.</p>
+        </div>
+      </div>
+
+      <div class="mini-title">Pricing + Profit (example numbers)</div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Sell Price</th>
+              <th>Est. Cost</th>
+              <th>Est. Profit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hoodie</td>
+              <td>$45</td>
+              <td>$25</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td>Boxy Tee</td>
+              <td>$25</td>
+              <td>$10</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Dad Hat</td>
+              <td>$20</td>
+              <td>$8</td>
+              <td>$12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="tiny muted">
+        Tip: You can edit the cost numbers in this table to match what your teacher wants (printing, blanks, etc.).
+      </p>
+    </div>
+  </section>
+
+  <!-- Lookbook -->
+  <section class="section" id="lookbook">
+    <div class="section-head reveal">
+      <h2>Lookbook</h2>
+      <p>Outfit ideas for the drop</p>
     </div>
 
-    <!-- BUSINESS PITCH SECTION -->
-    <section class="pitch" id="pitch">
-        <h2>Our Business Model</h2>
-        <p>
-            Created for our Grade 7 Business Complementary course at Major General Griesbach. 
-            Our goal is to provide high-quality everyday streetwear for middle school students at fair prices. 
-            Every item is locally designed with focus on durability, comfort, and aesthetic minimalism.
-        </p>
-    </section>
+    <div class="grid lookbook">
+      <div class="card look reveal">
+        <div class="look-top">
+          <span class="chip">Fit 01</span>
+          <h3>Clean & Classic</h3>
+        </div>
+        <p class="muted">Hoodie + relaxed pants + simple shoes. Easy everyday.</p>
+      </div>
 
-    <!-- TEAM SECTION -->
-    <div class="section-header" id="team">
-        <h2>Meet The Founders</h2>
-        <p>Grade 7 Business Team</p>
+      <div class="card look reveal">
+        <div class="look-top">
+          <span class="chip">Fit 02</span>
+          <h3>Minimal Street</h3>
+        </div>
+        <p class="muted">Boxy tee + hat + cargos. Light + sharp.</p>
+      </div>
+
+      <div class="card look reveal">
+        <div class="look-top">
+          <span class="chip">Fit 03</span>
+          <h3>School Ready</h3>
+        </div>
+        <p class="muted">Logo tee under hoodie. Comfortable for class.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="section-head reveal">
+      <h2>FAQ</h2>
+      <p>Quick answers</p>
     </div>
 
-    <div class="team-grid">
-        <div class="team-card">
-            <div class="team-role">Head of Product & Web</div>
-            <div class="team-name">Ahmad</div>
-        </div>
-        <div class="team-card">
-            <div class="team-role">Finance & Logistics</div>
-            <div class="team-name">Kerig</div>
-        </div>
-        <div class="team-card">
-            <div class="team-role">Marketing & Sales</div>
-            <div class="team-name">Brody</div>
-        </div>
+    <div class="faq reveal">
+      <button class="faq-q" aria-expanded="false">
+        Is this a real store?
+        <span class="plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p class="muted">It’s a class project website. The pre-order popup is a demo and doesn’t take payments.</p>
+      </div>
+
+      <button class="faq-q" aria-expanded="false">
+        How would delivery work?
+        <span class="plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p class="muted">Our plan is school pickup or delivery to homerooms (teacher-approved).</p>
+      </div>
+
+      <button class="faq-q" aria-expanded="false">
+        Can we add more items?
+        <span class="plus">+</span>
+      </button>
+      <div class="faq-a">
+        <p class="muted">Yes—copy a product card in the Collection section and change the name/price.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" id="team">
+    <div class="section-head reveal">
+      <h2>Meet the Founders</h2>
+      <p>Grade 7 business team</p>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Major General Griesbach School • Business Comps Class Project 2025</p>
-    </footer>
-
-    <!-- POPUP MODAL -->
-    <div class="modal" id="orderModal">
-        <div class="modal-content">
-            <h3 id="modalItemTitle">Pre-Order Item</h3>
-            <p id="modalItemPrice" class="modal-price"></p>
-            
-            <input type="text" id="custName" placeholder="Student Name / Homeroom">
-            <select id="custSize">
-                <option>Select Size (Youth L / Adult S)</option>
-                <option>Small (S)</option>
-                <option>Medium (M)</option>
-                <option>Large (L)</option>
-                <option>Extra Large (XL)</option>
-            </select>
-            
-            <button class="hero-btn full-btn" onclick="submitOrder()">Confirm Pre-Order</button>
-            <br>
-            <button class="modal-close" onclick="closeOrder()">Cancel</button>
-        </div>
+    <div class="grid team">
+      <div class="card member reveal">
+        <div class="role">Head of Product & Web</div>
+        <div class="name">Ahmad</div>
+        <div class="muted">Website + design</div>
+      </div>
+      <div class="card member reveal">
+        <div class="role">Finance & Logistics</div>
+        <div class="name">Kerig</div>
+        <div class="muted">Costs + planning</div>
+      </div>
+      <div class="card member reveal">
+        <div class="role">Marketing & Sales</div>
+        <div class="name">Brody</div>
+        <div class="muted">Promotion + pitch</div>
+      </div>
     </div>
+  </section>
 
-    <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="panel reveal">
+      <h2>Contact</h2>
+      <p class="muted">
+        Put your teacher-approved contact method here (example: “Ask us in class”).
+      </p>
+      <div class="contact-actions">
+        <a class="btn btn-ghost" href="#products">Back to Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Major General Griesbach School • Business Complementary • Hosted on GitHub Pages</p>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <!-- Order Modal -->
+  <div class="modal" id="orderModal" aria-hidden="true" role="dialog" aria-label="Pre-order form">
+    <div class="modal-card" role="document">
+      <div class="modal-head">
+        <h3 id="modalTitle">Pre-Order</h3>
+        <button class="icon-btn" id="closeModalBtn" aria-label="Close">×</button>
+      </div>
+
+      <p class="muted" id="modalPriceLine">Price: —</p>
+
+      <label class="label" for="studentName">Student name / homeroom</label>
+      <input id="studentName" class="input" type="text" placeholder="Example: Ahmad 7A" />
+
+      <div class="two">
+        <div>
+          <label class="label" for="sizeSelect">Size</label>
+          <select id="sizeSelect" class="input">
+            <option value="">Select size</option>
+            <option>Small (S)</option>
+            <option>Medium (M)</option>
+            <option>Large (L)</option>
+            <option>Extra Large (XL)</option>
+          </select>
+        </div>
+        <div>
+          <label class="label" for="qty">Qty</label>
+          <input id="qty" class="input" type="number" min="1" value="1" />
+        </div>
+      </div>
+
+      <div class="total">
+        <span class="muted">Total (demo):</span>
+        <strong id="totalLine">$0 CAD</strong>
+      </div>
+
+      <button class="btn btn-primary full" id="confirmBtn">Confirm Pre-Order (Demo)</button>
+      <button class="btn btn-ghost full" id="copyBtn" type="button">Copy Order Summary</button>
+
+      <p class="tiny muted">Tip: Click outside the box or press Esc to close.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
