@@ -1,134 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACES | Business Comps 7</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts: Plus Jakarta for body, Black Ops One for military stencil logo style -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800;900&family=Black+Ops+One&display=swap" rel="stylesheet">
-    
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <title>ACES | Business Complementary</title>
+  <meta name="description" content="ACES clothing brand website for a Grade 7 Business Complementary project." />
+  <meta name="theme-color" content="#07080d" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Plus+Jakarta+Sans:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">
-            ACES <span>GR 7</span>
+  <div class="topbar">
+    <p>ACES Launch Drop • Grade 7 Business Complementary Project</p>
+  </div>
+
+  <nav class="nav">
+    <a href="#home" class="logo">ACES <span>GR 7</span></a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#plan">Business Plan</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#team">Founders</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content reveal">
+      <p class="school">Major General Griesbach School</p>
+      <h1>ACES</h1>
+      <p class="tagline">Student-built apparel made for comfort, confidence, and everyday style.</p>
+
+      <div class="hero-buttons">
+        <a href="#collection" class="btn primary">View The Drop</a>
+        <a href="#plan" class="btn secondary">Business Plan</a>
+      </div>
+
+      <div class="stats">
+        <div>
+          <strong>3</strong>
+          <span>Launch Items</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#products">Collection</a></li>
-            <li><a href="#pitch">Business Plan</a></li>
-            <li><a href="#team">Founders</a></li>
-        </ul>
-    </nav>
+        <div>
+          <strong>100%</strong>
+          <span>Student Made</span>
+        </div>
+        <div>
+          <strong>2025</strong>
+          <span>Class Project</span>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="badge">Major General Griesbach School • Business Comps</div>
-        <h1>ACES. <span>Student Built.</span></h1>
-        <p>Premium streetwear designed by students, for students. High quality, comfortable, and made to stand out.</p>
-        <a href="#products"><button class="hero-btn">View The Drop</button></a>
-    </section>
-
-    <!-- PRODUCTS SECTION -->
-    <div class="section-header" id="products">
-        <h2>Launch Collection</h2>
-        <p>Pre-Order Now for School Delivery</p>
+  <section class="section" id="collection">
+    <div class="section-title reveal">
+      <p>Launch Collection</p>
+      <h2>The First Drop</h2>
     </div>
 
     <div class="products">
-        <!-- Item 1 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600" alt="Hoodie">
-            <div class="product-details">
-                <div class="product-title">Signature Heavyweight Hoodie</div>
-                <div class="product-price">$45.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Signature Heavyweight Hoodie', 45)">Pre-Order Item</button>
-            </div>
+      <article class="product-card reveal" data-name="ACES Heavyweight Hoodie" data-price="45">
+        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=900" alt="Hoodie">
+        <div class="product-info">
+          <div>
+            <h3>ACES Heavyweight Hoodie</h3>
+            <p>Warm, simple, and comfortable.</p>
+          </div>
+          <span>$45 CAD</span>
+          <button class="order-btn" type="button">Pre-Order</button>
         </div>
+      </article>
 
-        <!-- Item 2 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600" alt="Tee">
-            <div class="product-details">
-                <div class="product-title">Oversized Boxy Tee</div>
-                <div class="product-price">$25.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Oversized Boxy Tee', 25)">Pre-Order Item</button>
-            </div>
+      <article class="product-card reveal" data-name="ACES Box Tee" data-price="25">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=900" alt="T-shirt">
+        <div class="product-info">
+          <div>
+            <h3>ACES Box Tee</h3>
+            <p>Clean everyday shirt with a relaxed fit.</p>
+          </div>
+          <span>$25 CAD</span>
+          <button class="order-btn" type="button">Pre-Order</button>
         </div>
+      </article>
 
-        <!-- Item 3 -->
-        <div class="product-card">
-            <img class="product-img" src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600" alt="Cap">
-            <div class="product-details">
-                <div class="product-title">Embroidered Dad Hat</div>
-                <div class="product-price">$20.00 CAD</div>
-                <button class="buy-btn" onclick="openOrder('Embroidered Dad Hat', 20)">Pre-Order Item</button>
-            </div>
+      <article class="product-card reveal" data-name="ACES Dad Hat" data-price="20">
+        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=900" alt="Hat">
+        <div class="product-info">
+          <div>
+            <h3>ACES Dad Hat</h3>
+            <p>Adjustable, minimal, and easy to wear.</p>
+          </div>
+          <span>$20 CAD</span>
+          <button class="order-btn" type="button">Pre-Order</button>
         </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="plan">
+    <div class="business-card reveal">
+      <p class="mini-title">Business Plan</p>
+      <h2>How ACES Works</h2>
+      <p>
+        ACES is a student-made clothing brand created for our Grade 7 Business Complementary course.
+        Our idea is to sell simple, comfortable apparel through pre-orders so we only buy what customers actually want.
+      </p>
+
+      <div class="plan-grid">
+        <div>
+          <h3>Target Customer</h3>
+          <p>Students who want stylish clothing that is comfortable and not overpriced.</p>
+        </div>
+        <div>
+          <h3>Our Value</h3>
+          <p>Clean designs, fair prices, and a brand connected to our school community.</p>
+        </div>
+        <div>
+          <h3>Sales Plan</h3>
+          <p>Take class pre-orders, order in bulk, then deliver items at school.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Sell Price</th>
+              <th>Estimated Cost</th>
+              <th>Profit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hoodie</td>
+              <td>$45</td>
+              <td>$25</td>
+              <td>$20</td>
+            </tr>
+            <tr>
+              <td>Box Tee</td>
+              <td>$25</td>
+              <td>$10</td>
+              <td>$15</td>
+            </tr>
+            <tr>
+              <td>Dad Hat</td>
+              <td>$20</td>
+              <td>$8</td>
+              <td>$12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lookbook">
+    <div class="section-title reveal">
+      <p>Lookbook</p>
+      <h2>Fit Ideas</h2>
     </div>
 
-    <!-- BUSINESS PITCH SECTION -->
-    <section class="pitch" id="pitch">
-        <h2>Our Business Model</h2>
-        <p>
-            ACES is a student-run clothing brand created for our Grade 7 Business Complementary course at Major General Griesbach School. 
-            Our goal is to provide high-quality everyday streetwear for middle school students at fair prices. 
-            Every item is locally designed with a focus on durability, comfort, and aesthetic minimalism.
-        </p>
-    </section>
+    <div class="lookbook">
+      <div class="look-card reveal">
+        <span>01</span>
+        <h3>Clean School Fit</h3>
+        <p>ACES hoodie, relaxed pants, and simple sneakers.</p>
+      </div>
 
-    <!-- TEAM SECTION -->
-    <div class="section-header" id="team">
-        <h2>Meet The Founders</h2>
-        <p>Grade 7 Business Team</p>
+      <div class="look-card reveal">
+        <span>02</span>
+        <h3>Minimal Streetwear</h3>
+        <p>ACES box tee, dad hat, cargos, and layered accessories.</p>
+      </div>
+
+      <div class="look-card reveal">
+        <span>03</span>
+        <h3>Everyday Comfort</h3>
+        <p>ACES tee under the hoodie for an easy daily outfit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="team">
+    <div class="section-title reveal">
+      <p>Founders</p>
+      <h2>Meet The Team</h2>
     </div>
 
     <div class="team-grid">
-        <div class="team-card">
-            <div class="team-role">Head of Product & Web</div>
-            <div class="team-name">Ahmad</div>
-        </div>
-        <div class="team-card">
-            <div class="team-role">Finance & Logistics</div>
-            <div class="team-name">Kerig</div>
-        </div>
-        <div class="team-card">
-            <div class="team-role">Marketing & Sales</div>
-            <div class="team-name">Brody</div>
-        </div>
+      <div class="team-card reveal">
+        <p>Head of Product & Web</p>
+        <h3>Ahmad</h3>
+        <span>Website + design</span>
+      </div>
+
+      <div class="team-card reveal">
+        <p>Finance & Logistics</p>
+        <h3>Kerig</h3>
+        <span>Costs + planning</span>
+      </div>
+
+      <div class="team-card reveal">
+        <p>Marketing & Sales</p>
+        <h3>Brody</h3>
+        <span>Promotion + pitch</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-title reveal">
+      <p>FAQ</p>
+      <h2>Quick Answers</h2>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>Major General Griesbach School • Business Comps Class Project 2025</p>
-    </footer>
+    <div class="faq reveal">
+      <button class="faq-question" type="button">
+        Is ACES a real store?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>This is a class project website. The pre-order form is for presentation only and does not take payments.</p>
+      </div>
 
-    <!-- POPUP MODAL -->
-    <div class="modal" id="orderModal">
-        <div class="modal-content">
-            <h3 id="modalItemTitle">Pre-Order Item</h3>
-            <p id="modalItemPrice" class="modal-price"></p>
-            
-            <input type="text" id="custName" placeholder="Student Name / Homeroom">
-            <select id="custSize">
-                <option>Select Size (Youth L / Adult S)</option>
-                <option>Small (S)</option>
-                <option>Medium (M)</option>
-                <option>Large (L)</option>
-                <option>Extra Large (XL)</option>
-            </select>
-            
-            <button class="hero-btn full-btn" onclick="submitOrder()">Confirm Pre-Order</button>
-            <br>
-            <button class="modal-close" onclick="closeOrder()">Cancel</button>
-        </div>
+      <button class="faq-question" type="button">
+        How would people get their orders?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Our plan would be school pickup or delivery to homerooms if approved by the teacher.</p>
+      </div>
+
+      <button class="faq-question" type="button">
+        Why pre-orders?
+        <span>+</span>
+      </button>
+      <div class="faq-answer">
+        <p>Pre-orders help us know how many items to buy, which lowers the chance of wasting money on extra stock.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Link to your JavaScript file -->
-    <script src="script.js"></script>
+  <footer>
+    <h2>ACES</h2>
+    <p>Major General Griesbach School • Business Complementary • 2025</p>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-btn" id="closeModal" type="button">×</button>
+
+      <h2 id="modalTitle">Pre-Order</h2>
+      <p id="modalPrice">Price: $0 CAD</p>
+
+      <label for="nameInput">Name / Homeroom</label>
+      <input id="nameInput" type="text" placeholder="Example: Ahmad 7A">
+
+      <label for="sizeInput">Size</label>
+      <select id="sizeInput">
+        <option value="">Choose size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>Extra Large</option>
+      </select>
+
+      <label for="qtyInput">Quantity</label>
+      <input id="qtyInput" type="number" min="1" value="1">
+
+      <div class="total-line">
+        <span>Total</span>
+        <strong id="totalPrice">$0 CAD</strong>
+      </div>
+
+      <button class="confirm-btn" id="confirmOrder" type="button">Confirm Pre-Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
