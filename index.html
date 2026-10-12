@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ACES | Business Complementary</title>
-<meta name="description" content="ACES clothing brand website for a Business Complementary project.">
+<title>ACES | Apparel</title>
+<meta name="description" content="ACES apparel: clean designs, everyday comfort, and confidence. Play your cards better.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -62,8 +62,8 @@ h2{font-size:clamp(28px,4.5vw,50px);text-transform:uppercase;letter-spacing:-.03
 .card{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);transition:transform .25s,border-color .25s}
 .card:hover{border-color:color-mix(in srgb,var(--acc) 45%,transparent)}
 .prod{overflow:hidden;transform-style:preserve-3d;will-change:transform}
-.art{height:250px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,var(--glow),transparent 70%);position:relative}
-.art svg{width:62%;height:auto;transition:transform .5s cubic-bezier(.2,1.2,.3,1)}.prod:hover .art svg{transform:scale(1.1) rotate(-4deg)}
+.art{height:250px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,var(--glow),transparent 70%);position:relative;overflow:hidden}
+.art img{width:100%;height:100%;object-fit:contain;padding:10px;position:relative;z-index:1;transition:transform .5s cubic-bezier(.2,1.2,.3,1)}.prod:hover .art img{transform:scale(1.045)}
 .badge{position:absolute;top:14px;left:14px;background:var(--acc);color:var(--accInk);font:800 11px "Plus Jakarta Sans";padding:5px 10px;border-radius:99px;letter-spacing:.08em}
 .pi{padding:20px}.pi h3{font-size:17px}.pi p{color:var(--muted);font-size:14px;margin-top:6px}.pi .pr{display:block;color:var(--acc);font-weight:800;margin-top:12px}
 .order{width:100%;margin-top:16px;padding:12px;border:0;border-radius:99px;background:var(--acc);color:var(--accInk);font-weight:800;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;position:relative;overflow:hidden;transition:.2s}
@@ -123,7 +123,7 @@ footer p{margin-top:8px;color:var(--muted);font-size:12px;letter-spacing:.08em;t
 <nav>
   <a href="#home" class="logo display">ACES <small>Launch Drop</small></a>
   <ul class="links" id="links">
-    <li><a href="#collection">Collection</a></li><li><a href="#plan">Business Plan</a></li><li><a href="#lookbook">Lookbook</a></li><li><a href="#team">Founders</a></li><li><a href="#faq">FAQ</a></li>
+    <li><a href="#collection">Collection</a></li><li><a href="#lookbook">Lookbook</a></li><li><a href="#team">Founders</a></li><li><a href="#faq">FAQ</a></li>
   </ul>
   <button class="ib" id="theme" aria-label="Toggle light and dark theme">◐</button>
   <button class="ib" id="menu" aria-label="Open menu">☰</button>
@@ -131,10 +131,10 @@ footer p{margin-top:8px;color:var(--muted);font-size:12px;letter-spacing:.08em;t
 
 <header class="hero" id="home">
   <div>
-    <p class="eyebrow">Top Designer Company</p>
+    <p class="eyebrow">Everyday Apparel</p>
     <h1 class="display" aria-label="ACES"><span style="--i:0">A</span><span style="--i:1">C</span><span style="--i:2">E</span><span style="--i:3">S</span></h1>
-    <p class="tag">Student-built apparel made for comfort, confidence, and everyday style. Play your cards better.</p>
-    <div class="btns"><a href="#collection" class="btn p">View The Drop</a><a href="#plan" class="btn">Business Plan</a></div>
+    <p class="tag">Apparel made for comfort, confidence, and everyday style. Play your cards better.</p>
+    <div class="btns"><a href="#collection" class="btn p">View The Collection</a></div>
     <div class="stats">
       <div><b data-n="3">0</b><span>Launch Items</span></div>
       <div><b data-n="100" data-s="%">0</b><span>Authentic Quality</span></div>
@@ -150,21 +150,6 @@ footer p{margin-top:8px;color:var(--muted);font-size:12px;letter-spacing:.08em;t
   <div class="g3" id="prods"></div>
 </div></section>
 
-<section class="sec" id="plan"><div class="wrap">
-  <div class="card biz rv">
-    <p class="k">Business Plan</p><h2 style="margin-bottom:12px">How ACES Works</h2>
-    <p>ACES is a student-made clothing brand created for our Business Complementary course. Our idea is to sell simple, comfortable apparel through pre-orders so we only buy what customers actually want.</p>
-    <div class="g3 plan">
-      <div><h3>Target Customer</h3><p>Students who want stylish clothing that is comfortable and not overpriced.</p></div>
-      <div><h3>Our Value</h3><p>Clean designs, fair prices, and a brand connected to our school community.</p></div>
-      <div><h3>Sales Plan</h3><p>Take class pre-orders, order in bulk, then deliver items at school.</p></div>
-    </div>
-    <div class="tw"><table>
-      <thead><tr><th>Item</th><th>Sell Price</th><th>Estimated Cost</th><th>Profit</th><th>Margin</th></tr></thead>
-      <tbody id="tbody"></tbody>
-    </table></div>
-  </div>
-</div></section>
 
 <section class="sec" id="lookbook"><div class="wrap">
   <div class="rv"><p class="k">Lookbook</p><h2>Fit Ideas</h2></div>
@@ -181,7 +166,7 @@ footer p{margin-top:8px;color:var(--muted);font-size:12px;letter-spacing:.08em;t
   <div id="faqs"></div>
 </div></section>
 
-<footer><h2>ACES</h2><p>Major General Griesbach School • Business Complementary • 2029</p></footer>
+<footer><h2>ACES</h2><p>Everyday Apparel • Play Your Cards Better</p></footer>
 <button id="top" aria-label="Back to top">↑</button>
 
 <div class="modal" id="modal" aria-hidden="true">
@@ -210,18 +195,17 @@ const items=[
  {n:"ACES Heavyweight Hoodie",p:45,d:"Warm, simple, and comfortable.",pr:"$45 CAD",b:"60% off",c:25,t:"hoodie"},
  {n:"ACES Box Tee",p:25,d:"Clean everyday shirt with a relaxed fit.",pr:"$25 CAD",c:10,t:"tee"},
  {n:"ACES Dad Hat",p:20,d:"Adjustable, minimal, and easy to wear.",pr:"$20 CAD",c:8,t:"hat"}];
-const G='<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--acc)"/><stop offset="1" stop-color="#1b2030"/></linearGradient></defs>';
-const T='<text x="100" y="@Y" text-anchor="middle" font-family="Black Ops One,Impact" font-size="@S" fill="#07080d" opacity=".85">ACES</text>';
-const art={
- hoodie:`<svg viewBox="0 0 200 200">${G}<path d="M65 40c8 14 62 14 70 0l36 22 18 78-28 8-8-42v78H47v-78l-8 42-28-8 18-78z" fill="url(#g)"/><path d="M80 40c10 22 30 22 40 0" fill="none" stroke="#07080d" stroke-opacity=".35" stroke-width="4"/>${T.replace("@Y",118).replace("@S",26)}</svg>`,
- tee:`<svg viewBox="0 0 200 200">${G}<path d="M70 34c10 12 50 12 60 0l48 24-16 38-24-10v92H62V86l-24 10-16-38z" fill="url(#g)"/>${T.replace("@Y",110).replace("@S",24)}</svg>`,
- hat:`<svg viewBox="0 0 200 200">${G}<path d="M40 120c0-50 30-72 60-72s60 22 60 72z" fill="url(#g)"/><path d="M36 120c40 4 100 4 140 20-20 14-100 12-140-20z" fill="#10131a" stroke="var(--acc)" stroke-opacity=".5"/>${T.replace("@Y",100).replace("@S",20)}</svg>`};
-$("prods").innerHTML=items.map((x,i)=>`<article class="card prod rv" style="--d:${i*.1}s"><div class="art">${x.b?`<span class="badge">${x.b}</span>`:""}${art[x.t]}</div><div class="pi"><h3>${x.n}</h3><p>${x.d}</p><span class="pr">${x.pr}</span><button class="order" data-i="${i}">Pre-Order</button></div></article>`).join("");
+const productImages={
+ hoodie:"hoodie.png",
+ tee:"tshirt.jpg",
+ hat:"hat.jpg"
+};
+$("prods").innerHTML=items.map((x,i)=>`<article class="card prod rv" style="--d:${i*.1}s"><div class="art">${x.b?`<span class="badge">${x.b}</span>`:""}<img src="${productImages[x.t]}" alt="${x.n}" loading="lazy"></div><div class="pi"><h3>${x.n}</h3><p>${x.d}</p><span class="pr">${x.pr}</span><button class="order" data-i="${i}">Pre-Order</button></div></article>`).join("");
 $("tick").innerHTML=Array(12).fill("<span>ACES</span><span>♠ PLAY YOUR CARDS BETTER ♥</span>").join("");
 $("tbody").innerHTML=items.map(x=>{const pf=x.p-x.c,m=Math.round(pf/x.p*100);return`<tr><td>${x.n.replace("ACES ","").replace("Heavyweight ","")}</td><td>$${x.p}</td><td>$${x.c}</td><td>$${pf}</td><td><div class="m"><i style="--w:${m}%"></i>${m}%</div></td></tr>`}).join("");
 $("look").innerHTML=[["Clean School Fit","ACES hoodie, relaxed pants, and simple sneakers."],["Minimal Streetwear","ACES box tee, dad hat, cargos, and layered accessories."],["Everyday Comfort","ACES tee under the hoodie for an easy daily outfit."]].map((l,i)=>`<div class="card look rv" style="--d:${i*.1}s"><b>0${i+1}</b><h3>${l[0]}</h3><p>${l[1]}</p></div>`).join("");
 $("teamg").innerHTML=[["Head of Product & Web","Ahmad","Website + design"],["Finance & Logistics","Kerig","Costs + planning"],["Marketing & Sales","Brody","Promotion + pitch"]].map((t,i)=>`<div class="card team rv" style="--d:${i*.1}s"><div class="av">${t[1][0]}</div><em>${t[0]}</em><h3>${t[1]}</h3><span>${t[2]}</span></div>`).join("");
-$("faqs").innerHTML=[["Is ACES a real store?","This is a class project website. The pre-order form is for presentation only and does not take payments."],["How would people get their orders?","Our plan would be school pickup or delivery to homerooms if approved by the teacher."],["Why pre-orders?","Pre-orders help us know how many items to buy, which lowers the chance of wasting money on extra stock."]].map((f,i)=>`<div class="rv"><button class="fq" aria-expanded="false" aria-controls="a${i}">${f[0]}<b>+</b></button><div class="fa" id="a${i}"><div><p>${f[1]}</p></div></div></div>`).join("");
+$("faqs").innerHTML=[["Is ACES a real store?","The pre-order form is a demonstration and does not take payments."],["How would people get their orders?","Order fulfilment details will be shared when orders open."],["Why pre-orders?","Pre-orders help us plan quantities and reduce excess inventory."]].map((f,i)=>`<div class="rv"><button class="fq" aria-expanded="false" aria-controls="a${i}">${f[0]}<b>+</b></button><div class="fa" id="a${i}"><div><p>${f[1]}</p></div></div></div>`).join("");
 q$(".fq").forEach(b=>b.onclick=()=>{const o=b.getAttribute("aria-expanded")==="true";b.setAttribute("aria-expanded",!o);b.nextElementSibling.classList.toggle("o",!o)});
 
 // reveal + count up
